@@ -1,0 +1,24 @@
+# Written by MakeHuman 1.1.1
+version v1.1.1
+tags MaleCasual2
+camera 1.0 358.0 0.0 0.0 0.0 1.0
+modifier macrodetails-universal/Muscle 0.932000
+modifier macrodetails/African 0.058000
+modifier macrodetails-proportions/BodyProportions 0.524000
+modifier macrodetails/Gender 1.000000
+modifier macrodetails-height/Height 0.500000
+modifier breast/BreastSize 0.500000
+modifier macrodetails/Age 0.510000
+modifier breast/BreastFirmness 0.500000
+modifier macrodetails/Asian 0.058000
+modifier macrodetails/Caucasian 0.884000
+modifier macrodetails-universal/Weight 0.306000
+skeleton default.mhskel
+eyes HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6
+pose tpose.bvh
+clothes male_casualsuit06 be449715-fd7d-49d1-bca1-7fdd4264bc2d
+clothes shoes05 8ef14ff4-8547-419c-a495-17bab919568b
+clothesHideFaces False
+skinMaterial skins/middleage_caucasian_male/middleage_caucasian_male.mhmat
+material HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6 eyes/materials/brown.mhmat
+subdivide False
