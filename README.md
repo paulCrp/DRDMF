@@ -2,7 +2,7 @@
 Virtual environment with Emotiv Epoq interaction for phantom limb pain remediation 
 
 ## Info
-In this repository you can find a virtual environment (VE) for remediation of phantom limb pain. This work is based on the mirror box therapy in VE and the association of virtual reality and BCI. This project is carried by Paul Crépin and the UBO OpenFactory. Is also supported by the master of psychology CAER (Cognition, learning, evaluation and remediation : virtual reality & simulation) of the UBO (University of Occidental Britany).
+In this repository you can find a virtual environment (VE) for remediation of phantom limb pain. This work is based on the mirror box therapy in VE and the association of virtual reality and BCI. This project is carried by Paul Crépin and the UBO OpenFactory. Is also supported by the master of psychology CAER (Cognition, learning, evaluation and remediation : virtual reality & simulation) of the UBO (University of Occidental Brittany).
 
 ## Arch
 
