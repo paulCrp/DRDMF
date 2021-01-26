@@ -1,0 +1,49 @@
+
+2:47:56:945 ----> Initialisation de session
+2:47:59:478 ----> __ActivMode__
+2:47:59:484 ---->  :: > Action
+2:48:2:903 ---->  < Trigger activated >
+2:48:3:0 ---->  :: > Inhibition
+2:48:4:153 ---->  < Trigger desactivated >
+2:48:4:570 ---->  < Trigger activated >
+2:48:4:887 ---->  < Trigger desactivated >
+2:48:5:563 ---->  < Trigger activated >
+2:48:6:704 ---->  < Trigger desactivated >
+2:48:7:4 ---->  :: > Action
+2:48:7:795 ---->  < Trigger activated >
+2:48:9:62 ---->  < Trigger desactivated >
+2:48:10:3 ---->  < Trigger activated >
+2:48:11:2 ---->  :: > Inhibition
+2:48:11:228 ---->  < Trigger desactivated >
+2:48:15:4 ---->  :: > Action
+2:48:18:543 ---->  < Trigger activated >
+2:48:19:3 ---->  :: > Inhibition
+2:48:20:23 ---->  < Trigger desactivated >
+2:48:20:844 ---->  < Trigger activated >
+2:48:21:914 ---->  < Trigger desactivated >
+2:48:22:319 ---->  < Trigger activated >
+2:48:22:635 ---->  < Trigger desactivated >
+2:48:22:934 ---->  < Trigger activated >
+2:48:23:1 ---->  :: > Action
+2:48:23:140 ---->  < Trigger desactivated >
+2:48:23:434 ---->  < Trigger activated >
+2:48:24:160 ---->  < Trigger desactivated >
+2:48:24:927 ---->  < Trigger activated >
+2:48:26:378 ---->  < Trigger desactivated >
+2:48:27:5 ---->  :: > Inhibition
+2:48:27:226 ---->  < Trigger activated >
+2:48:28:244 ---->  < Trigger desactivated >
+2:48:29:72 ---->  < Trigger activated >
+2:48:29:711 ---->  < Trigger desactivated >
+2:48:30:246 ---->  < Trigger activated >
+2:48:31:0 ---->  :: > Action
+2:48:31:107 ---->  < Trigger desactivated >
+2:48:31:758 ---->  < Trigger activated >
+2:48:32:663 ---->  < Trigger desactivated >
+2:48:33:409 ---->  < Trigger activated >
+2:48:34:542 ---->  < Trigger desactivated >
+2:48:35:2 ---->  :: > Inhibition
+2:48:35:371 ---->  < Trigger activated >
+2:48:36:717 ---->  < Trigger desactivated >
+2:48:37:591 ---->  < Trigger activated >
+2:48:39:0 ----> __PauseMode__
