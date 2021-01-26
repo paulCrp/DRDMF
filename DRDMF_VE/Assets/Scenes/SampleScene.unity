@@ -7391,6 +7391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aee332e7a7abe84d89b296e1e66f231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 1020328936}
 --- !u!1 &1020328936
 GameObject:
   m_ObjectHideFlags: 0
@@ -7461,6 +7462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subjectNumber: 0
   numberOfTrials: 5
+  timeActivModeInSeconde: 30
   box: {fileID: 1926482269}
   greenBox: {fileID: 2100000, guid: da8257ef48b67514b9f053db31863af2, type: 2}
   greyBox: {fileID: 2100000, guid: 5722ae832a88ded4a8cce1377141d1fd, type: 2}

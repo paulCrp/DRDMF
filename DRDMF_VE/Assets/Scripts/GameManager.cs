@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public int subjectNumber = 0;
     // nombre d'essai pendant les essais actifs
     public int numberOfTrials = 5;
+    // temps de l'action requise en seconde
+    public int timeActivModeInSeconde = 30;
     // the box
     public GameObject box;
     // color for the box
@@ -32,6 +34,7 @@ public class GameManager : MonoBehaviour
     float animPosition = 0;
     // Var recceuillant les logs
     string mylogs = "";
+
     #endregion
 
     #region UNITY FUNCTIONS
@@ -41,7 +44,7 @@ public class GameManager : MonoBehaviour
     {
         playerPauseState = true;
         box.GetComponent<Renderer>().material = greyBox;
-        writeLogs("Initialisation de session");
+        writeLogs("Init");
     }
 
     // Update is called once per frame
@@ -62,7 +65,7 @@ public class GameManager : MonoBehaviour
                 AnimIsStopped(animationStateInfo);
             }
             
-            if ((DateTimeOffset.Now.ToUnixTimeSeconds() - timeModeStarted) > 3)
+            if ((DateTimeOffset.Now.ToUnixTimeSeconds() - timeModeStarted) > timeActivModeInSeconde)
             {
                 if (ActivTrialNumber < numberOfTrials*2)
                 {
@@ -99,21 +102,21 @@ public class GameManager : MonoBehaviour
 
     public void writeLogs(string newlog)
     {
-        System.DateTime currentTime = DateTime.Now;
+        DateTime currentTime = DateTime.Now;
 
         int hour = currentTime.Hour;
         int minute = currentTime.Minute;
         int second = currentTime.Second;
         int millisecond = currentTime.Millisecond;
         string recordedEntry = hour.ToString() + ":" + minute.ToString() + ":" + second.ToString() + ":" + millisecond.ToString();
-        mylogs = mylogs + "\n" + recordedEntry + " ----> " + newlog;
+        mylogs = mylogs + "\n" + recordedEntry + "--" + DateTimeOffset.Now.ToUnixTimeSeconds() + "--" + newlog;
         System.IO.File.WriteAllText("MyLogsFile"+ subjectNumber +".txt", mylogs);
     }
 
     private void setActivMode()
     {
         ActivTrialNumber = 0;
-        writeLogs("__ActivMode__");
+        writeLogs("AM");
         playerPauseState = false;
         setActivActionMode();
     }
@@ -122,7 +125,7 @@ public class GameManager : MonoBehaviour
         ActivTrialNumber ++;
         timeModeStarted = DateTimeOffset.Now.ToUnixTimeSeconds();
         box.GetComponent<Renderer>().material = greenBox;
-        writeLogs(" :: > Action");
+        writeLogs("AMA");
         activMode_Action = true;
     }
     private void setActivInhibitionMode()
@@ -130,13 +133,13 @@ public class GameManager : MonoBehaviour
         ActivTrialNumber ++;
         timeModeStarted = DateTimeOffset.Now.ToUnixTimeSeconds();
         box.GetComponent<Renderer>().material = redBox;
-        writeLogs(" :: > Inhibition");
+        writeLogs("AMI");
         activMode_Action = false;
     }
     private void setPauseMode()
     {
         ActivTrialNumber=0;
-        writeLogs("__PauseMode__");
+        writeLogs("PM");
         playerPauseState = true;
         box.GetComponent<Renderer>().material = greyBox;
         // accéder aux info de l'animator
@@ -153,7 +156,7 @@ public class GameManager : MonoBehaviour
     }
     private void AnimIsTriggerd(AnimatorStateInfo animationState)
     {
-        writeLogs(" < Trigger activated >");
+        writeLogs("ta");
         if (animationState.IsName("MoveBackward"))
         {
             // identifier la position de l'animation précédente (nécessité d'inverser la position [avec le 1-position précédente] car les animation sont en miroir)
@@ -169,7 +172,7 @@ public class GameManager : MonoBehaviour
     }
     private void AnimIsStopped(AnimatorStateInfo animationState)
     {
-        writeLogs(" < Trigger desactivated >");
+        writeLogs("td");
         if (animationState.IsName("MoveForward"))
         {
             animPosition = 1 - animationState.normalizedTime;

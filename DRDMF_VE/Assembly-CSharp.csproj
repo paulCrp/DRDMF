@@ -68,6 +68,12 @@
     <Compile Include="Assets\Scripts\CameraManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LampAnimationManager.cs" />
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/mail/Dev/DRDMF/DRDMF_VE/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/mail/Dev/DRDMF/DRDMF_VE/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/mail/Dev/DRDMF/DRDMF_VE/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -82,12 +88,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/Users/mail/Dev/DRDMF/DRDMF_VE/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/Users/mail/Dev/DRDMF/DRDMF_VE/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>C:/Users/mail/Dev/DRDMF/DRDMF_VE/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

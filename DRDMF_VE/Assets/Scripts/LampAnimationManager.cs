@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LampAnimationManager : MonoBehaviour
 {
-
+    public GameObject gameManager;
     private string redLogs;
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,8 @@ public class LampAnimationManager : MonoBehaviour
     {
         if (Input.GetKeyDown("f"))
         {
-            writeLogs(" !!! Menace RED !!!");
+            gameManager.GetComponent<GameManager>().writeLogs("RED");
+            //writeLogs("RED");
             GetComponent<Animator>().Play("LampAnimation", 0);
         }
     }
