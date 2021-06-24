@@ -10,12 +10,20 @@ public class GameManager : MonoBehaviour
 
     // numéro de participant
     public int subjectNumber = 0;
+    // Conditions
+    public enum Conditions
+    {
+        Externe,
+        Interne
+    }
+    public Conditions conditionExpe = Conditions.Externe;
     // nombre d'essai pendant les essais actifs
     public int numberOfTrials = 5;
     // temps de l'action requise en seconde
     public int timeActivModeInSeconde = 30;
     // the box
     public GameObject box;
+    public GameObject PlayerHead;
     // color for the box
     public Material greenBox;
     public Material greyBox;
@@ -42,6 +50,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (conditionExpe == Conditions.Interne)
+        {
+            PlayerHead.SetActive(false);
+        }
         playerPauseState = true;
         box.GetComponent<Renderer>().material = greyBox;
         writeLogs("Init");
